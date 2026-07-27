@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>С | Portfolio</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    color: white;
+    text-align: center;
+}
+
+/* Контейнер */
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* Аватар */
+.avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2a2a2a;
+    box-shadow: 0 0 25px rgba(255,255,255,0.05);
+    margin-bottom: 20px;
+}
+
+/* Имя */
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Описание */
+.subtitle {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Блок */
+.card {
+    margin-top: 25px;
+    padding: 18px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08);
+    text-align: left;
+}
+
+/* Заголовки */
+.card h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* Текст */
+.card p {
+    color: #bbb;
+    font-size: 14px;
+}
+
+/* Кнопки */
+.links {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.links a {
+    padding: 14px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.25s;
+}
+
+/* Эффект при наведении */
+.links a:hover {
+    transform: translateY(-4px) scale(1.02);
+    background: rgba(255,255,255,0.1);
+}
+
+/* Анимация появления */
+.fade {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Футер */
+footer {
+    margin-top: 40px;
+    color: #555;
+    font-size: 12px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="https://via.placeholder.com/120" class="avatar fade">
+
+<h1 class="fade" style="animation-delay:0.1s;">С</h1>
+
+<p class="subtitle fade" style="animation-delay:0.2s;">
+Зачем ты тут?.<br>
+
+</p>
+
+<div class="card fade" style="animation-delay:0.3s;">
+<h2>Обо мне</h2>
+<p>
+Типичный школьник миллионер.<br>
+Имею фиолетовый аттестат.
+</p>
+</div>
+
+<div class="card fade" style="animation-delay:0.4s;">
+<h2>Проект</h2>
+<p>
+Имею 57к в бс.
+(и 8к в клещ рояль)
+</p>
+</div>
+
+<div class="links fade" style="animation-delay:0.5s;">
+
+<a href="https://t.me/Xiwaa" target="_blank">📱 Telegram</a>
+
+<a href="https://www.tiktok.com/@kaktus6752" target="_blank">🎵 TikTok</a>
+
+<a href="https://vk.ru/id1040642707" target="_blank">👤 VK</a>
+
+</div>
+
+<footer class="fade" style="animation-delay:0.6s;">
+© 2026 С
+</footer>
+
+</div>
+
+</body>
+</html>
