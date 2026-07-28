@@ -3,20 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>С | Portfolio</title>
+<title>Портфолио</title>
 
 <style>
-    .avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    border: 3px solid white;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -25,159 +14,70 @@
 }
 
 body {
-    <img src="avatar.png" class="avatar" alt="Мой аватар">
     background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
     color: white;
     text-align: center;
+}
+
+/* Аватар */
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: 3px solid white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
 /* Контейнер */
 .container {
     max-width: 400px;
     margin: auto;
-    padding: 50px 20px;
+    padding: 20px;
 }
 
-/* Аватар */
-.avatar {
-<img src="avatar.png" class="avatar" alt="Мой аватар">
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #2a2a2a;
-    box-shadow: 0 0 25px rgba(255,255,255,0.05);
-    margin-bottom: 20px;
-}
-
-/* Имя */
+/* Заголовок */
 h1 {
     font-size: 28px;
     margin-bottom: 10px;
 }
 
-/* Описание */
-.subtitle {
-    color: #aaa;
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-/* Блок */
-.card {
-    margin-top: 25px;
-    padding: 18px;
-    border-radius: 15px;
-    background: rgba(255,255,255,0.03);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.08);
-    text-align: left;
-}
-
-/* Заголовки */
-.card h2 {
-    font-size: 16px;
-    margin-bottom: 8px;
-}
-
 /* Текст */
-.card p {
-    color: #bbb;
-    font-size: 14px;
+p {
+    opacity: 0.7;
+    margin-bottom: 20px;
 }
 
 /* Кнопки */
-.links {
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.links a {
-    padding: 14px;
-    border-radius: 12px;
+.btn {
+    display: block;
+    background: white;
+    color: black;
     text-decoration: none;
-    color: white;
-    font-size: 15px;
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.1);
-    transition: 0.25s;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
-/* Эффект при наведении */
-.links a:hover {
-    transform: translateY(-4px) scale(1.02);
-    background: rgba(255,255,255,0.1);
+.btn:hover {
+    background: #ddd;
 }
-
-/* Анимация появления */
-.fade {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 0.8s forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Футер */
-footer {
-    margin-top: 40px;
-    color: #555;
-    font-size: 12px;
-}
-
 </style>
 </head>
 
 <body>
 
+<img src="avatar.png" class="avatar" alt="Мой аватар">
+
 <div class="container">
+    <h1>Максим</h1>
+    <p>Мой портфолио сайт</p>
 
-<img src="https://via.placeholder.com/120" class="avatar fade">
-
-<h1 class="fade" style="animation-delay:0.1s;">С</h1>
-
-<p class="subtitle fade" style="animation-delay:0.2s;">
-Зачем ты тут?.<br>
-
-</p>
-
-<div class="card fade" style="animation-delay:0.3s;">
-<h2>Обо мне</h2>
-<p>
-Типичный школьник миллионер.<br>
-Имею фиолетовый аттестат.
-</p>
-</div>
-
-<div class="card fade" style="animation-delay:0.4s;">
-<h2>Проект</h2>
-<p>
-Имею 57к в бс.(и 8к в клещ рояль)
-Имею девушку)
-</p>
-</div>
-
-<div class="links fade" style="animation-delay:0.5s;">
-
-<a href="https://t.me/Xiwaa" target="_blank">📱 Telegram</a>
-
-<a href="https://www.tiktok.com/@kaktus6752" target="_blank">🎵 TikTok</a>
-
-<a href="https://vk.ru/id1040642707" target="_blank">👤 VK</a>
-
-</div>
-
-<footer class="fade" style="animation-delay:0.6s;">
-© 2026 С
-</footer>
-
+    <a href="#" class="btn">Мои проекты</a>
+    <a href="#" class="btn">Контакты</a>
 </div>
 
 </body>
